@@ -45,7 +45,7 @@ jobs:
         if: matrix.cargo-locked != '--locked'
         run: cargo update -v
 
-      - run: cargo test ${{ matrix.cargo-locked }} --features docs-rs
+      - run: cargo test ${{ matrix.cargo-locked }} --features docs-rs -- --nocapture
         env:
           RUSTC_BOOTSTRAP: 1
 

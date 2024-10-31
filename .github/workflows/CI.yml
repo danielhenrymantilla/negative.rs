@@ -78,7 +78,7 @@ jobs:
 
       - run: cargo test --lib --tests
 
-      - run: cargo test --doc --features docs-rs
+      - run: cargo test --doc --features docs-rs -- --nocapture
         if: matrix.rust-toolchain != '1.56.0'
         env:
           RUSTC_BOOTSTRAP: 1
