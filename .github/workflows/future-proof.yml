@@ -50,6 +50,6 @@ jobs:
           RUSTC_BOOTSTRAP: 1
 
       # - run: cargo test-ui
-      #   if: matrix.rust-toolchain != '1.53.0'
+      #   if: matrix.rust-toolchain != '1.56.0'
       #   env:
       #     RUSTC_BOOTSTRAP: 1

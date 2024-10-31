@@ -16,7 +16,7 @@ https://github.com/danielhenrymantilla/negative.rs)
 https://crates.io/crates/negative)
 [![Documentation](https://docs.rs/negative/badge.svg)](
 https://docs.rs/negative)
-[![MSRV](https://img.shields.io/badge/MSRV-1.53.0-white)](
+[![MSRV](https://img.shields.io/badge/MSRV-1.56.0-white)](
 https://gist.github.com/danielhenrymantilla/9b59de4db8e5f2467ed008b3c450527b)
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](
 https://github.com/rust-secure-code/safety-dance/)
