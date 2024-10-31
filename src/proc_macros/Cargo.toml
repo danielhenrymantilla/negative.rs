@@ -1,0 +1,27 @@
+# Templated by `cargo-generate` using https://github.com/danielhenrymantilla/proc-macro-template
+[lib]
+proc-macro = true
+path = "_mod.rs"
+
+[package]
+name = "negative-proc_macros"
+authors = [
+    "Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>"
+]
+version = "0.1.0"  # Keep in sync
+edition = "2021"
+rust-version = "1.56.0"
+
+license = "Zlib OR MIT OR Apache-2.0"
+repository = "https://github.com/danielhenrymantilla/negative.rs"
+documentation = "https://docs.rs/negative"
+
+description = "Internal: proc-macro backend of ::negative."
+
+[dependencies]
+proc-macro2.version = "1.0.89"
+quote.version = "1.0.37"
+syn.version = "2.0.0"
+syn.features = [
+    "derive", "parsing",
+]
