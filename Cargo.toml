@@ -16,8 +16,10 @@ repository = "https://github.com/danielhenrymantilla/negative.rs"
 documentation = "https://docs.rs/negative"
 readme = "README.md"
 
-# description = "…"
-# keywords = []
+description = "Negative impls in stable Rust"
+keywords = [
+    "negative", "impls", "impl", "auto-trait", "coherence"
+]
 
 [features]
 default = [
