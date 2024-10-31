@@ -31,7 +31,8 @@ jobs:
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@master
-        toolchain: ${{ matrix.rust-toolchain }}
+        with:
+          toolchain: ${{ matrix.rust-toolchain }}
         id: installed_toolchain
 
       - name: Override toolchain just in case.
@@ -65,7 +66,8 @@ jobs:
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@master
-        toolchain: ${{ matrix.rust-toolchain }}
+        with:
+          toolchain: ${{ matrix.rust-toolchain }}
         id: installed_toolchain
 
       - name: Override toolchain just in case.
