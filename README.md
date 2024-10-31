@@ -38,12 +38,12 @@ It can be useful to avoid the need to include an ugly `PhantomData`:
 struct SyncButNotSend;
 
 #[::negative::negative_impl]
-unsafe impl !Sync for Foo {}
+unsafe impl !Sync for SyncButNotSend {}
 
-const _OK: &dyn Sync = &SyncButNotSend;
+const _OK: &dyn Send = &SyncButNotSend;
 
-/// Error, `Send` is not implemented!
-const _COMPILE_ERROR: &dyn Send = &SyncButNotSend;
+/// Error, `Sync` is not implemented!
+const _COMPILE_ERROR: &dyn Sync = &SyncButNotSend;
 ```
 
 But most importantly, it does change the semantics with regards to _coherence_ (overlapping `impl`s checker), since it makes the trait be explictly unimplemented, _becoming a semver promise_, rather than the default "this thing happens to be carrying a field type which itself happens not to be implementing said auto-trait _yet_, so let's make it so the resulting type does not implement saif auto-trait _yet_ either".
