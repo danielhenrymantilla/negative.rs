@@ -7,12 +7,7 @@ cargo update -vw
 
 
 (cd src/proc_macros
-    cargo publish
+    cargo +stable publish
 )
 
-for i in $(seq 10)
-do
-    cargo publish && exit 0
-    sleep 5
-done
-cargo publish
+cargo +stable publish
