@@ -2,7 +2,7 @@
 
 <span style="text-align: center;">
 
-![Credit to @FlawlessDeveloper for the picture, a modification from a public domain one, see https://discord.com/channels/273534239310479360/1301567644171767890/1302566385968484373](https://gist.github.com/user-attachments/assets/d0dc0b98-aa31-4078-8164-ae6f04d4b6e7 "Credit to @FlawlessDeveloper for the picture, a modification from a public domain one, see https://discord.com/channels/273534239310479360/1301567644171767890/1302566385968484373")
+![Credit to @FlawlessDeveloper for the picture, a modification from a public domain one, see <https://discord.com/channels/273534239310479360/1301567644171767890/1302566385968484373>](https://gist.github.com/user-attachments/assets/d0dc0b98-aa31-4078-8164-ae6f04d4b6e7 "Credit to @FlawlessDeveloper for the picture, a modification from a public domain one, see https://discord.com/channels/273534239310479360/1301567644171767890/1302566385968484373")
 
 </span>
 
