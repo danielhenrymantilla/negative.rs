@@ -19,16 +19,19 @@ jobs:
           - macos-latest
           - windows-latest
         rust-toolchain:
-          # Future-proof against compiler-regressions
+        # Future-proof against non-locked regressions.
+          - stable
+        # Future-proof against compiler-regressions
           - beta
           - nightly
-        cargo-locked: ['--locked']
-        include:
-          # Also future-proof against semver breakage from dependencies.
+        cargo-locked: ['', '--locked']
+        exclude:
+          # Already tested by PR CI.
           - rust-toolchain: stable
-            cargo-locked: ''
-          - rust-toolchain: beta
-            cargo-locked: ''
+            cargo-locked: '--locked'
+          # Cursed auto-`nightly`-detection logic from dtolnay's crates may break `--locked`.
+          - rust-toolchain: nightly
+            cargo-locked: '--locked'
     steps:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@master
