@@ -4,14 +4,14 @@ version = 3
 
 [[package]]
 name = "negative"
-version = "0.1.2-rc1"
+version = "0.1.2-rc2"
 dependencies = [
  "negative-proc_macros",
 ]
 
 [[package]]
 name = "negative-proc_macros"
-version = "0.1.2-rc1"
+version = "0.1.2-rc2"
 dependencies = [
  "proc-macro2",
  "quote",
