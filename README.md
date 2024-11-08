@@ -1,11 +1,4 @@
 
-
-<span style="text-align: center;">
-
-![image](https://gist.github.com/user-attachments/assets/8dc46e20-90d6-431a-8805-665549e02650)
-
-</span>
-
 # `::negative`
 
 Negative `impl`s in stable Rust.
@@ -28,6 +21,13 @@ https://github.com/danielhenrymantilla/negative.rs/actions)
 https://github.com/rust-secure-code/safety-dance/)
 
 <!-- Templated by `cargo-generate` using https://github.com/danielhenrymantilla/proc-macro-template -->
+
+
+<span style="text-align: center;">
+
+![Credit to @FlawlessDeveloper for the picture, a modification from a public domain one, see <https://discord.com/channels/273534239310479360/1301567644171767890/1302566385968484373>](https://github.com/user-attachments/assets/1a2acd80-0260-4d11-af99-f157f0e57d61 "Credit to @FlawlessDeveloper for the picture, a modification from a public domain one, see https://discord.com/channels/273534239310479360/1301567644171767890/1302566385968484373")
+
+</span>
 
 ---
 
